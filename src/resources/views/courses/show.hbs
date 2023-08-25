@@ -1,0 +1,51 @@
+<div class="mt-4">
+
+    <div class="row">
+
+        <div class="col-lg-3">
+            <button>HOC NGAY</button>
+        </div>
+
+        <div class="col-lg-9">
+            <h2>{{course.name}}</h2>
+    <iframe src="https://www.youtube.com/embed/{{course.video}}" width="900" height="500" frameborder="0"></iframe>
+
+            <p>{{course.description}}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .row {
+        background-color: #f5f5f5; /* Gray-White Background */
+        border: 1px solid #ccc; /* Border */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box Shadow */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    button {
+        background-color: #007bff; /* Button Background Color */
+        color: #fff; /* Button Text Color */
+        border: none; /* Remove Button Border */
+        padding: 10px 20px; /* Adjust padding as needed */
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3; /* Button Hover Background Color */
+    }
+
+    h2 {
+        margin-top: 0; /* Remove default margin */
+    }
+
+    iframe {
+        width: 100%; /* Make iframe responsive */
+        height: 500px; /* Set the desired height */
+        border: none; /* Remove iframe border */
+    }
+
+    p {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+</style>
